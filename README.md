@@ -47,6 +47,16 @@ build a node image and create a cluster with:
 kind build node-image
 kind create cluster --image kindest/node:latest
 ```
+Create a Multi-node clusters use:
+
+```console
+kind create cluster --config multi-node-cluster-config.yaml
+```
+Create a Multi-node clusters with Control-plane HA use:
+
+```console
+kind create cluster --config multiple-control-plane-nodes-config.yaml
+```
 Multi-node clusters and other advanced features may be configured with a config
 file, for more usage see [the docs][user guide] or run `kind [command] --help`
 
