@@ -22,12 +22,14 @@ You can install kind with `GO111MODULE="on" go get sigs.k8s.io/kind@v0.7.0`.
 
 **NOTE**: please use the latest go to do this, ideally go 1.13 or greater.
 
+To use kind, you will need to [install docker].
+
+Please run `setup-kind.sh` script to setup complete enviroment
+
 ```console
 chmod +x setup-kind.sh
 ./setup-kind.sh
 ```
-
-To use kind, you will need to [install docker].  
 Once you have docker running you can create a cluster with:
 
 ```console
